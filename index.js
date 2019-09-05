@@ -21,7 +21,7 @@ class Neighborhood {
   }
   meals() {
     let meals = this.deliveries().map(delivery => delivery.meal());
-    meals.filter((item, pos) => meals.indexOf(item) === pos)
+    return meals.filter((item, pos) => meals.indexOf(item) === pos)
   }
 }   
 
