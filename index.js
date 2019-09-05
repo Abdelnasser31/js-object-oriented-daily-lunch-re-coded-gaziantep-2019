@@ -24,9 +24,6 @@ class Neighborhood {
     meals.filter((item, pos) => meals.indexOf(item) === pos)
   }
 }   
-    uniqueArray = a.filter(function(item, pos) {
-    return a.indexOf(item) == pos;
-})
 
 class Customer {
    constructor(name, neighborhoodId) {
