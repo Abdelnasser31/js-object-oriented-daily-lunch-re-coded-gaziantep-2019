@@ -59,7 +59,7 @@ class Meal {
     return store.deliveries.filter(delivery => delivery.mealId === this.id);
   }
   static byPrice() {
-    return sotre.meals.sort()
+    return sotre.meals.sort((a,b) => return b.price - a.price)
   }
 }
 class Delivery {
