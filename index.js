@@ -37,7 +37,7 @@ class Customer {
     return store.deliveries.filter(delivery => delivery.customerId === this.id);
   }
   totalSpent() {
-    // return totalSpent 
+    return this.meals.map(meal => meal.price).reduce();
   }
   meals() {
     return  this.deliveries().map(delivery => delivery.meal());
