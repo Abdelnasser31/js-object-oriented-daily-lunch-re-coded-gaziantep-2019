@@ -40,7 +40,7 @@ class Customer {
     // return totalSpent 
   }
   meals() {
-  this.deliveries().map(delivery => delivery.customerId === this.id);
+  this.deliveries().map(delivery => delivery.customer());
   }
   }
 
